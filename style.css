@@ -6,26 +6,30 @@
 }
 
 /* media query */
-@media  (max-width:1400px) {
-    body{
+@media (max-width:1400px) {
+    body {
         width: 100%;
     }
 }
-@media  (max-width:992px) {
-    body{
+
+@media (max-width:992px) {
+    body {
         width: 100%;
     }
 }
-@media  (max-width:768px) {
-    body{
+
+@media (max-width:768px) {
+    body {
         width: 100%;
     }
 }
-@media  (max-width:576px) {
-    body{
+
+@media (max-width:576px) {
+    body {
         width: 100%;
     }
 }
+
 /* utility */
 :root {
     --color-navbar: #080B12;
@@ -33,28 +37,56 @@
     --color-left-menu: #000000;
     --color-player: #282828;
 }
+
+.white-on-hover:hover {
+    color: white;
+}
+
 .white {
     color: white;
 }
+
+.gray {
+    color: #757575;
+}
+
 .font-size {
     font-size: 40px;
     font-weight: 600;
 }
-.space{
+
+.space {
     margin-left: 25px;
 }
+
+ul {
+    list-style: none;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+}
+
 /* header */
 .navbar {
     display: flex;
-    align-items: center; /* per allineare verticalmente */
+    align-items: center;
+    /* per allineare verticalmente */
     justify-content: space-between;
     background-color: var(--color-navbar);
     padding: 30px;
 }
 
-.navbar > div {
-    display: flex; /* per allineare orizzontalmente */
-    align-items: center; /* per allineare verticalmente */
+.navbar>div {
+    display: flex;
+    /* per allineare orizzontalmente */
+    align-items: center;
+    /* per allineare verticalmente */
 }
 
 .navbar button {
@@ -63,13 +95,16 @@
     background-color: transparent;
     border-radius: 20px;
     padding: 20px 40px;
-    transition: transform 1s, background-color 0.5s; /* Aggiungi transizioni */
-    cursor: pointer; /* Cambia il cursore */
+    transition: transform 1s, background-color 0.5s;
+    /* Aggiungi transizioni */
+    cursor: pointer;
+    /* Cambia il cursore */
 }
 
 .navbar button:hover {
     transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.1); /* Cambia il colore di sfondo */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Cambia il colore di sfondo */
 }
 
 .white {
@@ -84,3 +119,58 @@
     transform: scale(2);
 }
 
+
+
+
+
+
+
+/* left menu */
+.sidebar {
+    width: 30%;
+    background-color: #2f3136;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+/* main */
+.main-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-player);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
