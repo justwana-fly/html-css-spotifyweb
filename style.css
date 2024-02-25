@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--color-main);
+}
 
 /* in max'width  1200 992 768 576  */
 @media (max-width: 1400px) {
@@ -94,6 +97,13 @@ h1 {
 
 .margin-top-8 {
     margin-top: 8px;
+}
+.flex {
+    display: flex;
+}
+i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* Navbar */
@@ -235,7 +245,7 @@ h1 {
     background-color: var(--color-main);
     padding: 20px;
     overflow-y: auto;
-    margin-bottom: 45px;
+    margin-bottom: 70px;
 }
 
 .main-bar {
@@ -287,3 +297,101 @@ figcaption {
 
 
 /* Footer */
+footer {
+    position: fixed;
+    background-color: var(--color-player);
+    width: 100%;
+    padding: 10px 0px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+}
+ /* seziona sinitra del footer */
+.f-left {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    width: 20%;
+
+}
+.footer img {
+    width: 50px;
+    height: 50px;
+}
+.song-info {
+    margin-left: 10px;
+}
+.f-icons {
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+}
+ /* sezione centrale del footer */
+ .f-center{
+    width: 60%;
+ }
+ .player {
+    text-align: center;
+    margin-bottom: 15px;
+ }
+ .player i {
+    color: white;
+    padding: 0px 10px;
+    align-items: center;
+ }
+ .f-center .volume-bar{
+    width: 500px;
+ }
+.time {
+    display: flex;
+   align-items: center;
+}
+.time-left-now {
+    margin-right: 10px;
+}
+.time-right-total {
+    margin-left: 10px;
+}
+ 
+
+ /* sezione destra del footer */
+
+.f-right {
+    margin-right: 15px;
+    display: flex;
+    width: 20%;
+    
+    
+    align-items: center;
+} 
+.f-right i {
+    padding: 0px 10px;
+    color: white;
+}
+.f-right i:first-of-type {
+    margin-right: -19px;
+
+}
+.time {
+    display: flex;
+    justify-content: center;
+}
+
+.volume-bar {
+    width: 200px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 5px;
+  }
+  
+  .volume-level {
+    height: 100%;
+    background-color: white;
+    width: 30%; /* Volume attuale del 30% */
+    border-radius: 5px;
+  }
+
+  
